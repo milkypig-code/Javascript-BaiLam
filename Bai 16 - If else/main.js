@@ -32,34 +32,52 @@ let diemAnh = nhapDiem("anh");
 
 let diemTrungBinh = (diemVan + diemToan + diemAnh) / 3;
 
+// if (diemTrungBinh < 5) {
+//   alert(
+//     `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
+//       2
+//     )}. Sinh viên đạt loại yếu!`
+//   );
+// } else if (6.5 > diemTrungBinh) {
+//   alert(
+//     `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
+//       2
+//     )}. Sinh viên đạt loại trung bình!`
+//   );
+// } else if (8 > diemTrungBinh) {
+//   alert(
+//     `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
+//       2
+//     )}. Sinh viên đạt loại khá!`
+//   );
+// } else if (9 > diemTrungBinh) {
+//   alert(
+//     `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
+//       2
+//     )}. Sinh viên đạt loại giỏi!`
+//   );
+// } else if (diemTrungBinh >= 9) {
+//   alert(
+//     `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
+//       2
+//     )}. Sinh viên đạt loại xuất sắc!`
+//   );
+// }
+
+let xepLoai = "";
 if (diemTrungBinh < 5) {
-  alert(
-    `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
-      2
-    )}. Sinh viên đạt loại yếu!`
-  );
+  xepLoai = "yếu";
 } else if (6.5 > diemTrungBinh) {
-  alert(
-    `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
-      2
-    )}. Sinh viên đạt loại trung bình!`
-  );
+  xepLoai = "trung bình";
 } else if (8 > diemTrungBinh) {
-  alert(
-    `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
-      2
-    )}. Sinh viên đạt loại khá!`
-  );
+  xepLoai = "khá";
 } else if (9 > diemTrungBinh) {
-  alert(
-    `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
-      2
-    )}. Sinh viên đạt loại giỏi!`
-  );
+  xepLoai = "giỏi";
 } else if (diemTrungBinh >= 9) {
-  alert(
-    `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
-      2
-    )}. Sinh viên đạt loại xuất sắc!`
-  );
+  xepLoai = "xuất sắc";
 }
+alert(
+  `Điểm trung bình của sinh viên là: ${diemTrungBinh.toFixed(
+    2
+  )}. Sinh viên đạt loại ${xepLoai}!`
+);
