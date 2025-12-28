@@ -25,12 +25,12 @@ let cNum = Number(c);
 
 let delta = bNum * bNum - 4 * aNum * cNum;
 if (delta < 0) {
-  alert("Phương trình vô nghiệm!");
+  alert(`Phương trình vô nghiệm!`);
 } else if (delta === 0) {
   let x = -bNum / (2 * aNum);
-  alert("Phương trình có nghiệm kép: x = " + x);
+  alert(`Phương trình có nghiệm kép: x = ${x}`);
 } else {
   let x1 = (-bNum + Math.sqrt(delta)) / (2 * aNum);
   let x2 = (-bNum - Math.sqrt(delta)) / (2 * aNum);
-  alert("Phương trình có hai nghiệm phân biệt: x1 = " + x1 + ", x2 = " + x2);
+  alert(`Phương trình có hai nghiệm phân biệt: x1=${x1} và x2=${x2}`);
 }
