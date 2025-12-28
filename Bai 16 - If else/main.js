@@ -64,7 +64,7 @@ let diemTrungBinh = (diemVan + diemToan + diemAnh) / 3;
 //   );
 // }
 
-let xepLoai = "";
+let xepLoai;
 if (diemTrungBinh < 5) {
   xepLoai = "yếu";
 } else if (6.5 > diemTrungBinh) {
